@@ -1,9 +1,37 @@
 <!doctype html>
 <html>
   <head>
-    <title>This is the title of the webpage!</title>
+    <title>Dubby Page</title>
   </head>
   <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+    <p>This is the WG481 official Github stuff. Yeah.</p>
+    <a href="https://github.com/wg481/ThunderingSky" data-title="A 90's style JRPG.">WG481 fork of Thundering Sky.</a>
+<style>  
+.box
+{
+  border: 1px solid green;
+  position:absolute;
+  color: white;
+  top: 19px;
+  left: 30px;
+  background-color: black;
+}
+</style>
+<script>
+$().ready(function(){
+$( "a" ).hover(
+  function() {   
+   var title = $(this).attr("data-title");  // extracts the title using the data-title attr applied to the 'a' tag
+    $('<div/>', { // creates a dynamic div element on the fly
+        text: title,
+        class: 'box'
+    }).appendTo(this);  // append to 'a' element
+  }, function() {
+    $(document).find("div.box").remove(); // on hover out, finds the dynamic element and removes it.
+  }
+);
+  });
+</script>
+    
   </body>
 </html>
