@@ -1,6 +1,3 @@
-<link rel="next" href="index.html">
-It's a website that also happens to be my README.MD just ripped and translate to HTML.
-<br>
-https://wg481.github.io/
-<br>
-https://github.com/wg481/wg481
+<h1>This is a website.</h1>
+<h2>That I used for my Aaronic Priesthood class to keep track of assignments and whatnot.</h2>
+<h3>And proof that I cannot use cascading styling sheets.</h3>
